@@ -4,10 +4,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Login from '../screens/Login';
 import UserType from '../screens/UserType';
 import CompanyData from '../screens/CompanyData';
-import CompanyAddress from '../screens/CompanyAddress';
-import CorporateData from '../screens/CorporateData';
+import CompanyAddress from '../screens/CompanyAdrees'; // ← Com um 'd'
+import CorporateData from '../screens/corporateData'; // ← 'c' minúsculo
 import ProfessionalProfile from '../screens/ProfessionalProfile';
-import JobsScreen from '../screens/JobsScreen';
+import JobsScreen from '../screens/Jobsscreens'; // ← Nome diferente
 
 const Stack = createNativeStackNavigator();
 
