@@ -15,7 +15,3 @@ const App = () => {
     </>
   );
 };
-
-// REGISTRO OBRIGATÓRIO para Expo
-registerRootComponent(App);
-export default App;
