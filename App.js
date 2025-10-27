@@ -1,6 +1,7 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
 import AppNavigator from './src/navigation/AppNavigator';
+import { registerRootComponent } from 'expo';
 
 const App = () => {
   return (
@@ -15,4 +16,6 @@ const App = () => {
   );
 };
 
+// REGISTRO OBRIGATÓRIO para Expo
+registerRootComponent(App);
 export default App;
