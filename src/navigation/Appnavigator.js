@@ -1,13 +1,15 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+// CORRIGINDO NOMES DOS ARQUIVOS
 import Login from '../screens/Login';
 import UserType from '../screens/UserType';
 import CompanyData from '../screens/CompanyData';
-import CompanyAddress from '../screens/CompanyAdrees'; // ← Com um 'd'
-import CorporateData from '../screens/corporateData'; // ← 'c' minúsculo
+import CompanyAddress from '../screens/CompanyAddress'; // ← Corrigido
+import CorporateData from '../screens/CorporateData';   // ← Nome com C maiúsculo
 import ProfessionalProfile from '../screens/ProfessionalProfile';
-import JobsScreen from '../screens/Jobsscreens'; // ← Nome diferente
+import JobsScreen from '../screens/JobsScreen';           // ← Nome correto
 
 const Stack = createNativeStackNavigator();
 
@@ -17,13 +19,9 @@ const AppNavigator = () => {
       <Stack.Navigator 
         initialRouteName="Login"
         screenOptions={{
-          headerStyle: {
-            backgroundColor: '#2563eb',
-          },
+          headerStyle: { backgroundColor: '#2563eb' },
           headerTintColor: '#ffffff',
-          headerTitleStyle: {
-            fontWeight: '600',
-          },
+          headerTitleStyle: { fontWeight: '600' },
         }}
       >
         <Stack.Screen 
